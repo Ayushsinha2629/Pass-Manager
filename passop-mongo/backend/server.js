@@ -19,7 +19,9 @@ const port = 3000
 
 // Middleware
 app.use(bodyparser.json())
-app.use(cors())
+app.use(cors({
+    origin: 'https://pass-manager-zaftor.onrender.com/'
+  }))
 
 
 // Get all the passwords
